@@ -19,8 +19,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Iconize.EntypoPlus", "Fonts\Plugin.Iconize.EntypoPlus\Plugin.Iconize.EntypoPlus.csproj", "{5D364CE1-19EB-4346-9FC2-B8AC1CB79C67}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Iconize.FontAwesome", "Fonts\Plugin.Iconize.FontAwesome\Plugin.Iconize.FontAwesome.csproj", "{4E00DD83-0FAB-49D7-8501-29431E1579CF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Iconize.Ionicons", "Fonts\Plugin.Iconize.Ionicons\Plugin.Iconize.Ionicons.csproj", "{35B6275D-E505-4E38-A662-2EA3612A955E}"
@@ -41,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Iconize.JamIcons", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Iconize.MaterialDesignIcons", "Fonts\Plugin.Iconize.MaterialDesignIcons\Plugin.Iconize.MaterialDesignIcons.csproj", "{AE0D04FF-73FB-4F42-B035-DD1776485F53}"
 EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Plugin.Iconize.EntypoPlus", "Fonts\Plugin.Iconize.EntypoPlus\Plugin.Iconize.EntypoPlus.csproj", "{256868C3-CC8C-4EBF-9864-8CA13DE63BBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,10 +51,6 @@ Global
 		{B0387056-24F4-4421-8B49-B78A2CEDC19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0387056-24F4-4421-8B49-B78A2CEDC19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0387056-24F4-4421-8B49-B78A2CEDC19E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D364CE1-19EB-4346-9FC2-B8AC1CB79C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D364CE1-19EB-4346-9FC2-B8AC1CB79C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D364CE1-19EB-4346-9FC2-B8AC1CB79C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D364CE1-19EB-4346-9FC2-B8AC1CB79C67}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4E00DD83-0FAB-49D7-8501-29431E1579CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4E00DD83-0FAB-49D7-8501-29431E1579CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E00DD83-0FAB-49D7-8501-29431E1579CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -95,6 +91,10 @@ Global
 		{AE0D04FF-73FB-4F42-B035-DD1776485F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE0D04FF-73FB-4F42-B035-DD1776485F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE0D04FF-73FB-4F42-B035-DD1776485F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256868C3-CC8C-4EBF-9864-8CA13DE63BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256868C3-CC8C-4EBF-9864-8CA13DE63BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256868C3-CC8C-4EBF-9864-8CA13DE63BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256868C3-CC8C-4EBF-9864-8CA13DE63BBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

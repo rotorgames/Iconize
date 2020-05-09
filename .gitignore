@@ -263,3 +263,4 @@ __pycache__/
 # Build Tools
 tools/
 build.ps1
+.DS_Store
