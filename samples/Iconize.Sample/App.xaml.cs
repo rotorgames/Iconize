@@ -22,17 +22,17 @@ namespace Iconize.Sample
 
             Plugin.Iconize.Iconize
                 .With(new Plugin.Iconize.Fonts.EntypoPlusModule())
-                .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
-                .With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
-                .With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule())
-                .With(new Plugin.Iconize.Fonts.IoniconsModule())
-                .With(new Plugin.Iconize.Fonts.JamIconsModule())
-                .With(new Plugin.Iconize.Fonts.MaterialModule())
-                .With(new Plugin.Iconize.Fonts.MeteoconsModule())
-                .With(new Plugin.Iconize.Fonts.SimpleLineIconsModule())
-                .With(new Plugin.Iconize.Fonts.TypiconsModule())
-                .With(new Plugin.Iconize.Fonts.WeatherIconsModule());
-
+                //.With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
+                //.With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule())
+                //.With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule())
+                //.With(new Plugin.Iconize.Fonts.IoniconsModule())
+                //.With(new Plugin.Iconize.Fonts.JamIconsModule())
+                //.With(new Plugin.Iconize.Fonts.MaterialModule())
+                //.With(new Plugin.Iconize.Fonts.MeteoconsModule())
+                //.With(new Plugin.Iconize.Fonts.SimpleLineIconsModule())
+                //.With(new Plugin.Iconize.Fonts.TypiconsModule())
+                //.With(new Plugin.Iconize.Fonts.WeatherIconsModule())
+                ;
             // The root page of your application
             var tabbedPage = new IconTabbedPage { Title = "Iconize" };
             tabbedPage.On<Xamarin.Forms.PlatformConfiguration.Android>().SetBarItemColor(Xamarin.Forms.Color.Yellow);
@@ -43,6 +43,7 @@ namespace Iconize.Sample
             for (int i = 0; i < Math.Min(Plugin.Iconize.Iconize.Modules.Count, 5); i++)
             {
                 var module = Plugin.Iconize.Iconize.Modules[i];
+                Console.WriteLine("module "+ module.FontName);
                 var bc = new ModuleWrapper(module);
                 var icon = module.Keys.FirstOrDefault();
                 tabbedPage.Children.Add(new Page1
