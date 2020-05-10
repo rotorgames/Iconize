@@ -100,8 +100,8 @@
     <BundleResource Include="..\..\src\Fonts\Plugin.Iconize.FontAwesome\iconize-fontawesome-brands.ttf">
       <Link>Resources\iconize-fontawesome-brands.ttf</Link>
     </BundleResource>
-    <BundleResource Include="..\..\src\Fonts\Plugin.Iconize.FontAwesome\iconize-fontawesome-regular.ttf">
-      <Link>Resources\iconize-fontawesome-regular.ttf</Link>
+    <BundleResource Include="..\..\src\Fonts\Plugin.Iconize.FontAwesome\iconize-fontawesome-regular-2.ttf">
+      <Link>Resources\iconize-fontawesome-regular-2.ttf</Link>
     </BundleResource>
     <BundleResource Include="..\..\src\Fonts\Plugin.Iconize.FontAwesome\iconize-fontawesome-solid.ttf">
       <Link>Resources\iconize-fontawesome-solid.ttf</Link>

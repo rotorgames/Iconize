@@ -13,7 +13,7 @@
     <PackageId>Xam.$(MSBuildProjectName).Fix</PackageId>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>3.5.2</Version>
+    <Version>3.5.4</Version>
   </PropertyGroup>
 
   <PropertyGroup>
