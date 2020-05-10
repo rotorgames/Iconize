@@ -19,10 +19,23 @@ var solution = "./src/Iconize.sln";
 Task("Clean")
 	.Does(() =>
 {
-	CleanDirectories("./artifacts/");
+	CleanDirectories("./artifacts");
 
-	CleanDirectories("./**/bin");
-	CleanDirectories("./**/obj");
+    var directoriesToClean = GetDirectories("./**/bin");
+    CleanDirectories(directoriesToClean);
+    DeleteDirectories(directoriesToClean, new DeleteDirectorySettings {
+        Recursive = true,
+        Force = false
+    });
+
+    var directoriesToClean2 = GetDirectories("./**/obj");
+    DeleteDirectories(directoriesToClean2, new DeleteDirectorySettings {
+        Recursive = true,
+        Force = false
+    });
+
+    //CleanDirectories("./**/bin");
+	//CleanDirectories("./**/obj");
 });
 
 Task("Restore")

@@ -39,6 +39,7 @@ namespace Iconize.Sample
             tabbedPage.On<Xamarin.Forms.PlatformConfiguration.Android>().SetBarSelectedItemColor(Xamarin.Forms.Color.Black);
             tabbedPage.On<Xamarin.Forms.PlatformConfiguration.Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
 
+            
             for (int i = 0; i < Math.Min(Plugin.Iconize.Iconize.Modules.Count, 5); i++)
             {
                 var module = Plugin.Iconize.Iconize.Modules[i];
@@ -50,6 +51,7 @@ namespace Iconize.Sample
                     Icon = icon
                 });
             }
+            
 
             //foreach (var module in Plugin.Iconize.Iconize.Modules)
             //{

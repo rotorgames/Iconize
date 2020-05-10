@@ -1,8 +1,8 @@
 <Project>
   <PropertyGroup Label="PackageInfo">
     <Copyright>Copyright (c) Jeremy Marcus</Copyright>
-    <PackageLicenseUrl>https://github.com/jsmarcus/Iconize/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/jsmarcus/Iconize</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/INHack20/Iconize/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/INHack20/Iconize</PackageProjectUrl>
     <Authors>Jeremy Marcus</Authors>
     <Owners>Jeremy Marcus</Owners>
     <PackageTags>xamarin;android;ios;mac;forms;monodroid;monotouch;xamarin.android;xamarin.ios;xamarin.forms;xamarin.mac;uwp</PackageTags>
@@ -10,7 +10,7 @@
     <PackageDescription>Easily add icon fonts to your Xamarin.Forms applications!</PackageDescription>
     <RepositoryUrl>https://github.com/jsmarcus/Iconize</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageId>Xam.$(MSBuildProjectName)</PackageId>
+    <PackageId>Xam.$(MSBuildProjectName).Fix</PackageId>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
     <NeutralLanguage>en</NeutralLanguage>
     <Version>3.5.1</Version>
