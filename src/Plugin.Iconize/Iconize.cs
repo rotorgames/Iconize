@@ -125,10 +125,31 @@ namespace Plugin.Iconize
         /// <returns>The icon, or null if no icon matches the key</returns>
         public static IIcon FindIconForKey(String iconKey)
         {
+            Console.WriteLine("FindIconForKey " + iconKey+ " Modules: "+ Modules.Count);
             if (String.IsNullOrWhiteSpace(iconKey))
                 return null;
 
-            return Modules?.FirstOrDefault(x => x.Keys.Contains(iconKey))?.GetIcon(iconKey);
+            //Busqueda rapida
+            var result = Modules?.FirstOrDefault(x => x.Keys.Contains(iconKey))?.GetIcon(iconKey);
+            if (result == null) {
+                foreach (var module in Modules)
+                {
+                    Console.WriteLine("Modulo " + module.FontName + " Modules: " + module.Keys.Count);
+                    foreach (string icon in module.Keys) {
+                        Console.WriteLine("Modulo " + module.FontName + " Icon: " + icon);
+                    }
+                    if (module.Keys.Contains(iconKey))
+                    {
+                        result = module.GetIcon(iconKey);
+                    }
+                }
+            }
+            
+
+            if (result == null) {
+                throw new Exception($"No se encontro icono para {iconKey}");
+            }
+            return result;
         }
     }
 }

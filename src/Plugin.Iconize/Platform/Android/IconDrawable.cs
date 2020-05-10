@@ -63,7 +63,10 @@ namespace Plugin.Iconize
         public IconDrawable(Context context, IIcon icon)
         {
             var module = Iconize.FindModuleOf(icon);
-
+            Console.WriteLine("IconDrawable.Icon " + icon);
+            if (icon is null) {
+                throw new Java.Lang.IllegalStateException("El icono no puede estar nulo.");
+            }
             if (module is null)
                 throw new Java.Lang.IllegalStateException($"Unable to find the module associated with icon {icon.Key}, have you registered the module you are trying to use with Iconize.With(...) in your Application?");
 

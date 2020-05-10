@@ -112,6 +112,10 @@
       <Project>{37B28D65-4D60-4AA7-ABF3-6B644C6FAD0E}</Project>
       <Name>Iconize.Sample</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\src\Plugin.Iconize\Plugin.Iconize.csproj">
+      <Project>{B895E7D7-6310-484A-AC1C-616D2DDBCE95}</Project>
+      <Name>Plugin.Iconize</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

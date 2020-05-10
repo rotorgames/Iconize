@@ -24,5 +24,4 @@
   <ItemGroup Condition=" $(TargetFramework.StartsWith('uap10.0')) ">
     <Content Include="@(FontFiles)" />
   </ItemGroup>
-
 </Project>
