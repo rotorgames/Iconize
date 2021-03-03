@@ -9,13 +9,16 @@
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
-    <Folder Include="Assets\" />
-    <AndroidAsset Include="@(FontFiles)" Link="Assets\%(Filename)%(Extension)" />
+    <AndroidAsset Include="@(FontFiles)" Link="%(Filename)%(Extension)" />
+  </ItemGroup>
+    
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+    <BundleResource Include="@(FontFiles)" Link="%(Filename)%(Extension)" />
   </ItemGroup>
 
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+  <!--<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
     <TfmSpecificPackageFile Include="@(FontFiles)" BuildAction="BundleResource" PackagePath="contentFiles\any\$(TargetFramework)\Resources\" />
-  </ItemGroup>
+  </ItemGroup>-->
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.Mac')) ">
     <TfmSpecificPackageFile Include="@(FontFiles)" BuildAction="BundleResource" PackagePath="contentFiles\any\$(TargetFramework)\Resources\" />
