@@ -10,7 +10,7 @@
     <PackageDescription>Easily add icon fonts to your Xamarin.Forms applications!</PackageDescription>
     <RepositoryUrl>https://github.com/jsmarcus/Iconize</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageId>Xam.$(MSBuildProjectName).Fix</PackageId>
+    <PackageId>Rg.Xam.$(MSBuildProjectName)</PackageId>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
     <NeutralLanguage>en</NeutralLanguage>
     <Version>3.5.4</Version>
